@@ -1,0 +1,39 @@
+1.create a new repo
+
+2.run <mkdir my_new_folder> (creates a new folder in your pwd)
+
+3.run <cd my_new_folder> (changes your pwd to my_new_folder)
+
+4.run <git init> (creates a .git folder in your current directory)
+
+5.run <echo "text file content" > mynewfile.txt> (creates or overwrites a .txt file and writes the text inside it)
+
+6.run <git add .> (stages changes all changes to include in the next commit)
+
+7.run <git commit -m "first commit"> (takes all the staged changes (files added with git add) and saves a snapshot of them in git’s history and adds a commit message describing the changes)
+
+8.run <git remote add origin https://github.com/<username>/<repo-name>.git> (adds a remote repository with name of the remote)
+
+9.run <git branch -M branch-name> (changes the name of the current branch)
+
+10.run <git push -u repo-name branch-name> (sends the local commits to a remote repository and sets the default upstream branch for the current local branch)
+
+11.run <git checkout -b branch-name-2> (creates a new branch and switchs to it)
+
+12.run <echo "second text file content"> mynewfile2.txt> (creates or overwrites a .txt file and writes the text inside it)
+
+13.run <git add .> (stages changes all changes to include in the next commit)
+
+14.run <git commit -m "second-commit>" (takes all the staged changes (files added with git add) and saves a snapshot of them in git’s history and adds a commit message describing the changes)
+
+15.run <git push -u repo-name branch-name> (sends the local commits to a remote repository and sets the default upstream branch for the current local branch)
+
+16.go to your github repo in the browser
+
+17.click compare and pull request.
+
+18.click create pull request.
+
+19.click merge pull request
+
+20.click confirm merge
