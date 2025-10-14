@@ -8,18 +8,18 @@ dotted-decimal: 255.255.0.0
 
 3 public Subnets
 public subnet:
-az-1: 10.91.1.0/24
-az-1: 10.91.2.0/24
-az-1: 10.91.3.0/24
+us-east-1a: 10.91.1.0/24
+us-east-1b: 10.91.2.0/24
+us-east-1c: 10.91.3.0/24
 
 6 private subnets
 private subnet:
-az-1: 10.91.10.0/24
-az-1: 10.91.20.0/24
-az-1: 10.91.30.0/24
-az-1: 10.91.40.0/24
-az-1: 10.91.50.0/24
-az-1: 10.91.60.0/24
+us-east-1a: 10.91.10.0/24
+us-east-1b: 10.91.20.0/24
+us-east-1c: 10.91.30.0/24
+us-east-1d: 10.91.40.0/24
+us-east-1e: 10.91.50.0/24
+us-east-1f: 10.91.60.0/24
 
 AWS Regions in alphabetical order:
 10.af-south-1

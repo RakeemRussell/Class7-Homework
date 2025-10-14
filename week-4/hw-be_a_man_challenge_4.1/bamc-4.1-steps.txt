@@ -7,3 +7,4 @@ Inside your VPC, build a single Windows bastion host within a public subnet, and
 Each Linux web server should also display different text and pictures
 
 Take screenshots of the running WIndows bastion host, the three Linux servers (highlighting the three different AZs in each photo), and a screenshot of a successful SSH connection to each Linux server from within the bastion host.
+
