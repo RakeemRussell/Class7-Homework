@@ -1,4 +1,4 @@
-region it was designed for: virginia
+region it was designed for: n.virginia-us-east-1
 
 vpc-cidr:10.91.0.0/16
 
