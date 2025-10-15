@@ -67,22 +67,21 @@ firewall(sg): <bamc4.1-sg-public>
 
 
 6.BUILD Linux SERVERS:
-    5a.click-launch-instance
-    5b.instance-name: <bamc4.1-linux-webserver>
-    5c.application-&-os-images: <linux>
-    5d.ami: <amazon linux 2013 kernel-6.1 ami>
-    5e.instance-type: <t3.micro>
-    5f.key-pair-name: <existing_bamc4.1-key-pair>
-    5g.key-pair-type: <existing_bamc4.1-key-type>
-    5h.private-key-file-format: <existing_bamc4.1-key-format>
-    5i.network-settings:
+    6a.click-launch-instance
+    6b.instance-name: <bamc4.1-linux-webserver>
+    6c.application-&-os-images: <linux>
+    6d.ami: <amazon linux 2013 kernel-6.1 ami>
+    6e.instance-type: <t3.micro>
+    6f.key-pair-name: <existing_bamc4.1-key-pair>
+    6g.key-pair-type: <existing_bamc4.1-key-type>
+    6h.private-key-file-format: <existing_bamc4.1-key-format>
+    6i.network-settings:
 vpc: <existing_bamc4.1-vpc>
 subnet: <private subnet>
 auto-assign-public-ip: <disable>
 firewall(sg): <bamc4.1-sg-private>
-    5j.advanced details: 
+    6j.advanced details: 
 user-data: <startup-script>
-
 
 
 7.CONNECT TO WINDOWS SERVER:
@@ -108,7 +107,6 @@ user-data: <startup-script>
 8a.copy_linux_private-ip-dns-name
     8b.open bastion-windows-server
     8c.paste_linux_private-ip-dns-name_inside_new_tab_of_bastion-server_(with http://)_before
-
 
 
 9.CONNECT TO LINUX VIA SSH FROM WINDOWS-BASTION:
