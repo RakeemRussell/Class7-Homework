@@ -1,0 +1,38 @@
+programs to use:
+
+programs not to use:
+
+files to be modified:
+
+files not to be modified:
+    1 <.terraform.lock.hcl>
+    2 <.terraform>
+    3.<terraform.tfstate>
+
+github repos to reference:
+    1 <https://github.com/chewbaccawaf/class7.git>
+    2 <curl -O --ssl-no-revoke https://raw.githubusercontent.com/aaron-dm-mcdonald/aws-image-resizer/refs/heads/main/.gitignore>
+commands to get terraform running:
+    1.terraform --version
+    2.terraform init
+    3.terraform validate
+    4.terraform plan
+    5.terraform apply
+
+screenshots:
+    successful 'terraform apply'
+    results of <aws sts get-caller-identity> command
+    of .gitignore file in the same folder as the terraform files
+    one person with your instructions that was able to deploy terraform on their own
+
+terraform steps:
+    1.terraform --version
+    2.terraform init
+    3.terraform validate
+    4.terraform plan
+    5.terraform apply
+    6.
+    7.
+    8.
+    9.
+    10.

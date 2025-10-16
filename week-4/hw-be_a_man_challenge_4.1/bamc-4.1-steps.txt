@@ -116,8 +116,8 @@ user-data: <startup-script>
 
 
 10.TEARDOWN:
-    10a.<e.g. delete instances>
-    10b.<e.g. delete nate-gateway>
-    10c.<e.g. delete vpc>
-    10d.<e.g. release elastic ip (takes time)>
+    10a.<delete instances>
+    10b.<delete nate-gateway>
+    10c.<delete vpc>
+    10d.<release elastic ip (takes time)>
 
