@@ -1,0 +1,81 @@
+if you are using root to sign into aws and have no other aliases to sign into aws, start with 1
+
+if you are not using root and need access keys, start at 1o.
+
+if you have aws_agent installed correctly skip to 2.
+
+
+1. make_sure_aws_agent_is_installed_correctly
+    1a. open your web browser, navigate to <https://aws.amazon.com/console/>
+    1b. sign in with root user
+    1c. navigate to IAM (identity and access management)
+    1d. click users under access management
+    1e. click create_user, make a name for user, check provide_user_access_to_the_aws_console, under user type chose i_want_to_create_an_iam_user, under console password chose custom_password and make one, uncheck users_must_create_a_new_password_at_next_sign_in, click next
+    1f. click create_group, name the group admin, check the administrator_access policy, click create  user_group
+    1g. under user_groups check admin group, click next
+    1h. click create_user
+    1i. copy your user_name and console_password into notepad & download .csv file
+    1j. click return_to_users_list
+    1k. navigate to dashboard under IAM (identity and access management)
+    1l. under aws_account click create under account_alias, name the alias (e.g. aws-class-v1)
+    1m. copy account_alias to notepad
+    1n. sign out of your aws session
+    1o. sign back in with your new credentials using account_alias, user_name and password
+    1p. navigate to IAM, click users, under summary click create_access_key
+    1q. chose CLI (command_line_interface), check confirm, click next
+    1r. make a description
+    1s. copy access & secret access key to notepad and download .csv file, click done
+    1t. navigate to your terraform folder in git bash, run <aws configure>
+    1u. enter your access keys one at a time and press enter
+    1v. use the default region name and type json as the default output format
+ 
+2. make_sure_terraform_is_installed 
+    2a. open git bash and run <terraform --version>
+    2b. if terraform is not installed run <choco update && choco upgrade> if you are on windows, <brew update && brew upgrade> if you are on mac
+
+3. set_up_&_initialize_terraform
+    3a. navigate to theowaf/class7/aws/homework path in git bash, 
+    3b. make a directory and cd into it by running <mdkir terraform_example && cd terraform_example> in git bash
+    3c. verify you are in the correct directory with <pwd>
+    3d. create a file named 0-authentication.tf with <touch 0-authentication.tf>
+    3e. verify the file was created with <ls>
+    3f. type <code .> to open vscode
+    3g. in your web browser go to <https://github.com/chewbaccawaf/class7.git>
+    3h. copy code from 0-auth.tf file with the copy button to the right of raw
+    3i. in your vscode past the code in the 0-auth.tf file, save the file with <ctrl s> for windows or <command s> for mac
+    3j. on the top of vscode next to run click terminal and new terminal (might be 3 horizontal dots)
+    3k. in the terminal make sure its git bash, not powershell or anything else
+    3l. run <ls> in the terminal, make sure the file is there
+    3m. run <pwd>, make sure you are in the right place
+    3n. run <terraform init>
+    3o. this will create a .terraform sub_folder and a .terraform.lock.hcl file
+    3p. run <terraform validate>
+    3q. you should see (success! the configuration is valid.)
+    3r. run <terraform plan> 
+    3s. you should see (no changes. your infrastructure matches the configuration)
+    3t. run <terraform apply>
+    3u. this will create a terraform.tfstate file
+    3v. (this shows authentication to the aws_cloud if everything ran properly)
+    3w. run <curl -O --ssl-no-revoke https://raw.githubusercontent.com/aaron-dm-mcdonald/aws-image-resizer/refs/heads/main/.gitignore>
+    3x. this will add a .gitignore file (helps with future pushes to github)
+
+4. files 
+    4a- files to be modified:
+    0-auth.tf
+
+    4b- files not to be modified:
+    .terraform.lock.hcl
+    .terraform
+    .terraform.tfstate
+
+5. github repos
+    1. <https://github.com/chewbaccawaf/class7.git>
+    2. <curl -O --ssl-no-revoke https://raw.githubusercontent.com/aaron-dm-mcdonald/aws-image-resizer/refs/heads/main/.gitignore>
+
+6. relevant commands:
+    1.<terraform --version>
+    2.<terraform init>
+    3.<terraform validate>
+    4.<terraform plan>
+    5.<terraform apply>
+    6.<terraform clone>
