@@ -13,6 +13,7 @@ github repos to reference:
     1 <https://github.com/chewbaccawaf/class7.git>
     2 <curl -O --ssl-no-revoke https://raw.githubusercontent.com/aaron-dm-mcdonald/aws-image-resizer/refs/heads/main/.gitignore>
     3 <curl https://raw.githubusercontent.com/aaron-dm-mcdonald/Class7-notes/refs/heads/main/101825/check.sh | bash>
+    
 commands to get terraform running:
     1.terraform --version
     2.terraform init
