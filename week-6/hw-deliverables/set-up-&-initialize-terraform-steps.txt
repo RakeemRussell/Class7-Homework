@@ -60,10 +60,10 @@ if you have aws_agent installed correctly skip to 2.
     3x. this will add a .gitignore file (helps with future pushes to github)
 
 4. files 
-    4a- files to be modified:
+    4a. files to be modified:
     0-auth.tf
 
-    4b- files not to be modified:
+    4b. files not to be modified:
     .terraform.lock.hcl
     .terraform
     .terraform.tfstate

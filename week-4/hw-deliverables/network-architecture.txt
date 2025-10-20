@@ -1,6 +1,6 @@
 region it was designed for: n.virginia-us-east-1
 
-vpc-cidr:10.91.0.0/16
+vpc-cidr:10.90.0.0/16
 
 subnet masks:
 binary: 11111111.11111111.00000000.00000000
@@ -8,18 +8,18 @@ dotted-decimal: 255.255.0.0
 
 3 public Subnets
 public subnet:
-us-east-1a: 10.91.1.0/24
-us-east-1b: 10.91.2.0/24
-us-east-1c: 10.91.3.0/24
+us-east-1a: 10.90.1.0/24
+us-east-1b: 10.90.2.0/24
+us-east-1c: 10.90.3.0/24
 
 6 private subnets
 private subnet:
-us-east-1a: 10.91.10.0/24
-us-east-1b: 10.91.20.0/24
-us-east-1c: 10.91.30.0/24
-us-east-1d: 10.91.40.0/24
-us-east-1e: 10.91.50.0/24
-us-east-1f: 10.91.60.0/24
+us-east-1a: 10.90.10.0/24
+us-east-1b: 10.90.20.0/24
+us-east-1c: 10.90.30.0/24
+us-east-1d: 10.90.40.0/24
+us-east-1e: 10.90.50.0/24
+us-east-1f: 10.90.60.0/24
 
 AWS Regions in alphabetical order:
 10.af-south-1
@@ -39,28 +39,28 @@ AWS Regions in alphabetical order:
 212.ap-southeast-6
 213.ap-southeast-7
 
-31.ca-central-1
-32.ca-west-1
+30.ca-central-1
+31.ca-west-1
 
-41.eu-central-1
-42.eu-central-2
-43.eu-north-1
-44.eu-south-1
-45.eu-south-2
-46.eu-west-1
-47.eu-west-2
-48.eu-west-3
+40.eu-central-1
+41.eu-central-2
+42.eu-north-1
+43.eu-south-1
+44.eu-south-2
+45.eu-west-1
+46.eu-west-2
+47.eu-west-3
 
-51.il-central-1
+50.il-central-1
 
-61.me-central-1
-62.me-south-1
+60.me-central-1
+61.me-south-1
 
-71.mx-central-1
+70.mx-central-1
 
-81.sa-east-1
+80.sa-east-1
 
-91.us-east-1
-92.us-east-2
-93.us-west-1
-94.us-west-2
+90.us-east-1
+91.us-east-2
+92.us-west-1
+93.us-west-2
